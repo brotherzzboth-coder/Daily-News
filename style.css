@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400..800&family=Kranky&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Style+Script&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: auto;
+    font-style: normal;
+
+}
+
+/* Scrollbar for modern browsers */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track (background) */
+::-webkit-scrollbar-track {
+    background: #c7c4f0;  /* Light grey to match white theme */
+    border-radius: 20px;
+}
+
+/* Handle (the draggable part) */
+::-webkit-scrollbar-thumb {
+    background: #cccccc;  /* Medium grey */
+    border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #999999;  /* Darker grey on hover */
+}
+
+
+body {
+    position: relative;
+    background-color: #040a0a;
+    color: white;
+}
+
+/* Globle css */
+.obj-width {
+    /* display: flex; */
+    max-width: 1200px;
+    /* margin: auto; */
+}
+
+nav {
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    width: 100vw;
+    background-color: #2d4c50;
+    padding: 1.3rem 0;
+    top: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 25px;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 2.7rem;
+    font-family: "Kranky", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#search-input {
+    max-width: 400px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #333;
+}
+
+#search-button {
+    padding: 10px 20px;
+    background-color: #138065;
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 20px;
+
+}
+
+#blog-container {
+    width: 98vw;
+    caret-color: transparent;
+    padding: 8rem 3rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.blog-card {
+    padding: 10px;
+    width: 280px;
+    border: 1px solid #1f7985;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.blog-card:hover {
+    box-shadow: 4px 4px 5px rgb(30, 73, 78);
+    transform: translateY(-5px);
+    transition: 0.3s ease-in-out;
+    z-index: 0;
+}
+
+.blog-card img {
+    border-radius: 10px;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    /* margin-bottom: 0.5rem; */
+}
+
+.blog-card h2 {
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.blog-card p {
+    font-size: 1rem;
+    padding-top: 0.7rem;
+    font-weight: 350;
+}
+
+@media (max-width: 500px) {
+    nav {
+        padding: 1.5rem 8px;
+    }
+
+    .logo {
+        margin-left: 2px;
+        font-size: 2rem;
+    }
+
+    .search-container {
+        display: flex;
+        margin-left: 20px;
+    }
+
+    #search-input {
+        width: 150px;
+        border: none;
+        padding: 9px 13px;
+        border-radius: 19px;
+        font-size: 0.8rem;
+        color: #333;
+    }
+
+    #search-button {
+        padding: 7px 8px;
+        font-size: 15px;
+        cursor: pointer;
+        border-radius: 19px;
+        margin: 0 13px;
+    }
+
+    #blog-container {
+        padding: 50px 1rem;
+        padding-top: 7rem;
+        /* padding: 7rem 1rem; */
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 35px;
+    }
+
+    .blog-card {
+        padding: 7.5px;
+        width: 100vw;
+        border-radius: 9px;
+    }
+
+    .blog-card img {
+        border-radius: 9px;
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        margin-bottom: 0;
+    }
+
+    .blog-card h2 {
+        color: #141414;
+        font-size: 1rem;
+        font-weight: 550;
+        padding: 2px 0;
+    }
+
+    .blog-card p {
+        font-size: 13px;
+        padding: 2px 0;
+        font-weight: 420;
+    }
+
+
+}
